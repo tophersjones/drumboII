@@ -207,7 +207,7 @@ class Root extends Component {
           </button>
         </div>
         <InstButtons />
-        <div>{this.state.activeCell + 1}</div> 
+        <div>{this.state.activeCell + 1}</div>
       </div>
     )
   }

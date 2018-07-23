@@ -989,9 +989,6 @@ function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) ===
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-/**
- * COMPONENT
- */
 var Routes =
 /*#__PURE__*/
 function (_Component) {
@@ -1011,18 +1008,9 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      var isLoggedIn = this.props.isLoggedIn;
-      return _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
-        path: "/snare",
-        component: _components.Snare
-      }), _react.default.createElement(_reactRouterDom.Route, {
-        path: "/signup",
-        component: _components.Signup
-      }), _react.default.createElement(_reactRouterDom.Route, {
+      return _react.default.createElement("div", null, _react.default.createElement(_reactRouterDom.Route, {
         path: "/",
         component: _components.UserHome
-      }), isLoggedIn && _react.default.createElement(_reactRouterDom.Switch, null), _react.default.createElement(_reactRouterDom.Route, {
-        component: _components.Login
       }));
     }
   }]);
